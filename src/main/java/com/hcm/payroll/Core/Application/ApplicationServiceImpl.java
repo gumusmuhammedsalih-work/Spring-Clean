@@ -1,23 +1,20 @@
 package com.hcm.payroll.Core.Application;
 
 import com.hcm.payroll.Core.Domain.Entities.User;
-import com.hcm.payroll.Core.Domain.IRepository;
-import org.springframework.stereotype.Service;
+import com.hcm.payroll.Core.Domain.Repositories.IUserRepository;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public class ApplicationServiceImpl implements IAplicationService {
-    private final IRepository userRepository;
+    private final IUserRepository userRepository;
 
-    // Constructor
-    public ApplicationServiceImpl(IRepository userRepository) {
+    public ApplicationServiceImpl(IUserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
     // Getter for userRepository
-    public IRepository getUserRepository() {
+    public IUserRepository getUserRepository() {
         return userRepository;
     }
 

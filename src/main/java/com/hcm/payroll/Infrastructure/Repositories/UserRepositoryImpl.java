@@ -1,21 +1,19 @@
-package com.hcm.payroll.Infrastructure;
+package com.hcm.payroll.Infrastructure.Repositories;
 
-import com.hcm.payroll.Core.Domain.IRepository;
+import com.hcm.payroll.Core.Domain.Repositories.IUserRepository;
 import com.hcm.payroll.Core.Domain.Entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 
-public class RepositoryImpl implements IRepository {
+public class UserRepositoryImpl implements IUserRepository {
 
     private final UserRepositoryJPA userRepositoryJPA;
 
     @Autowired
-    public RepositoryImpl(UserRepositoryJPA userRepositoryJPA) {
+    public UserRepositoryImpl(UserRepositoryJPA userRepositoryJPA) {
         this.userRepositoryJPA = userRepositoryJPA;
     }
 

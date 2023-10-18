@@ -4,6 +4,7 @@ package com.hcm.payroll.Presentation;
 import com.hcm.payroll.Core.Application.IAplicationService;
 import com.hcm.payroll.Core.Domain.Entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
