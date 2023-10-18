@@ -1,10 +1,12 @@
 package com.hcm.payroll.Core.Application;
 
 import com.hcm.payroll.Core.Domain.Entities.User;
+import com.hcm.payroll.Core.Domain.IRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class ApplicationServiceImpl implements IAplicationService {
     private final IRepository userRepository;
 
