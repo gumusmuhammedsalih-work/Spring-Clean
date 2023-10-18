@@ -1,6 +1,6 @@
 package com.hcm.payroll.Core.Application;
 
-import com.hcm.payroll.Core.Domain.User;
+import com.hcm.payroll.Core.Domain.Entities.User;
 
 import java.util.List;
 import java.util.Optional;
